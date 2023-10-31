@@ -59,7 +59,7 @@ uint8_t ring_buffer_get(ring_buffer_t *ring_buffer, uint8_t *data){
  * @brief this function returns the size of the buffer
  *
  */
-uint8_t ring_buffer_size(ring_buffer_t  *ring_buffer){
+uint16_t ring_buffer_size(ring_buffer_t  *ring_buffer){
 
 	uint16_t size = 0;
 	if((ring_buffer->is_full==0) &&  ring_buffer->tail < ring_buffer ->head){
