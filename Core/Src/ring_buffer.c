@@ -79,7 +79,7 @@ uint16_t ring_buffer_size(ring_buffer_t  *ring_buffer){
 
 uint8_t ring_buffer_is_empty(ring_buffer_t  *ring_buffer)
 {
-	return ((ring_buffer->is_full !=1)&&(ring_buffer->head==ring_buffer->tail));
+	return ((ring_buffer->is_full ==0)&&(ring_buffer->head==ring_buffer->tail));
 }
 /**
  * @brief this function checks if the buffer is full
